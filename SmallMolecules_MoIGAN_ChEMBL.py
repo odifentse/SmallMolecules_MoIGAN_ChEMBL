@@ -57,7 +57,7 @@ smiles
 
 # STEP 6: FILTER OUT MOLECULES WITH TOO MANY ATOMS
 
-# This will enable us to reduce the model complexity.
+# This will enable us to reduce the model complexity by keeping only molecules with fewer than 120 molecules
 filtered_smiles = [x for x in smiles if Chem.MolFromSmiles(x).GetNumAtoms() < num_atoms]
 filtered_smiles # produces a condensed (shorter) list of the original set of smiles from data/df (now 2081)
 
