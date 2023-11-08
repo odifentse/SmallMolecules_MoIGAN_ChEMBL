@@ -13,8 +13,12 @@ The generator takes a sample (z) from a standard normal distribution to generate
 The discriminator and reward network have the same architectures and recieve graphs as inputs. A Relational-GCN and MLPs are used to produce the singular output.
 """
 
-# STEP 1: IMPORT LIBRARIES
+# STEP 1: INSTALL LIBRARIES
 
+pip install deepchem
+
+
+# STEP 1: IMPORT LIBRARIES
 
 from collections import OrderedDict
 
